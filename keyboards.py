@@ -4,6 +4,15 @@ from deck import Card
 from config import COLORS, COLOR_EMOJI, COLOR_NAME_UZ
 
 
+def lobby_keyboard(game_id: str, player_count: int) -> InlineKeyboardMarkup:
+    builder = InlineKeyboardBuilder()
+    builder.button(
+        text="▶️ O'yinni boshlash" + (" ✅" if player_count >= 2 else " ❌"),
+        callback_data=f"start_game:{game_id}",
+    )
+    return builder.as_markup()
+
+
 def hand_keyboard(hand: list[Card], playable_uids: set[str], pending_draw: int = 0) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     for card in hand:
