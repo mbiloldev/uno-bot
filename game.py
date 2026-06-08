@@ -5,10 +5,6 @@ from deck import Card, Deck
 from config import MIN_PLAYERS, MAX_PLAYERS, HAND_SIZE
 
 
-def generate_game_id(length: int = 8) -> str:
-    return "".join(random.choices(string.ascii_uppercase + string.digits, k=length))
-
-
 @dataclass
 class Player:
     user_id: int
