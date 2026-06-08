@@ -3,7 +3,30 @@ import string
 from dataclasses import dataclass, field
 from deck import Card, Deck
 from config import MIN_PLAYERS, MAX_PLAYERS, HAND_SIZE
-r after wild
+
+
+def generate_game_id(length: int = 8) -> str:
+    return "".join(random.choices(string.ascii_uppercase + string.digits, k=length))
+
+
+@dataclass
+class Player:
+    user_id: int
+    name: str
+    hand: list[Card] = field(default_factory=list)
+    hand_message_id: int | None = None  # message_id of the private hand message
+
+
+class GameState:
+    def __init__(self, creator_id: int, creator_name: str, group_chat_id: int | None = None):
+        self.game_id: str = generate_game_id()
+        self.creator_id: int = creator_id
+        self.group_chat_id: int | None = group_chat_id  # set when game is started from a group
+        self.players: list[Player] = []
+        self.deck: Deck | None = None
+        self.current_index: int = 0
+        self.direction: int = 1  # 1 = clockwise, -1 = counter-clockwise
+        self.active_color: str | None = None  # overrides top card color after wild
         self.pending_draw: int = 0  # accumulated draw penalty
         self.stack_type: str | None = None  # "+2", "+4", "+10"
         self.awaiting_color: bool = False  # True when wild was played, waiting for color pick
