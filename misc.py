@@ -8,11 +8,6 @@ from config import BOT_USERNAME
 router = Router()
 
 
-@router.message(Command("quit"))
-async def cmd_quit(message: Message, bot: Bot):
-    user = message.from_user
-    g = G.get_user_game(user.id)
-
     if not g:
         await message.answer("Siz hech qanday o'yinda emassiz.")
         return
