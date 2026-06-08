@@ -2,17 +2,6 @@ from aiogram import Router, F, Bot
 from aiogram.types import CallbackQuery, Message
 from aiogram.exceptions import TelegramBadRequest
 
-import game as G
-from deck import Card
-from keyboards import hand_keyboard, color_keyboard
-from stickers import get_sticker
-from config import COLOR_EMOJI, COLOR_NAME_UZ
-
-router = Router()
-
-
-# ──────────────────────────────────────────────
-# Helpers
 # ──────────────────────────────────────────────
 
 async def send_game_status(bot: Bot, g: G.GameState):
