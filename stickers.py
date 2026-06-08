@@ -1,7 +1,23 @@
 # Fill in actual Telegram sticker file_id values below after uploading your sticker pack.
 # Keys follow the pattern: "{color}_{value}" for colored cards, or "wild", "wild+4", "wild+10"
 
-s_MTOwQ",
+STICKERS: dict[str, str] = {
+    # Red cards
+    "red_0": "CAACAgIAAxkBAAIDZWoj56G-6mav22Dx3AotDgzoSfPYAAK4nAACU4EhSVYhInrTAWYtOwQ",
+    "red_1": "CAACAgIAAxkBAAIDm2oj5_FKjUafGnL0enn0rSagtPIEAAIwnAACU4EhSTCzEvT4y1cFOwQ",
+    "red_2": "CAACAgIAAxkBAAIDm2oj5_FKjUafGnL0enn0rSagtPIEAAIwnAACU4EhSTCzEvT4y1cFOwQ",
+    "red_3": "CAACAgIAAxkBAAIDnWoj5_G_wghvxnesKSiSJYgDMjyBAAJPnAACU4EhSXb9BSankpH3OwQ",
+    "red_4": "CAACAgIAAxkBAAIDnmoj5_FydgbEDPep8nGP28-4KogjAAJSnAACU4EhSde5G7mIy3SJOwQ",
+    "red_5": "CAACAgIAAxkBAAIDn2oj5_FKQS1PFfzk1YJOPlVJk4FWAAJVnAACU4EhSaT3iT9jrl7BOwQ",
+    "red_6": "CAACAgIAAxkBAAIDpGoj5_HhbRRa9vvh5NeTgYos5GzGAAJmnAACU4EhSQ3Tei2IecWZOwQ",
+    "red_7": "CAACAgIAAxkBAAIDoWoj5_Gb0-M-jJo06Bdil0f36WFzAAJbnAACU4EhSdM8jgHy81tvOwQ",
+    "red_8": "CAACAgIAAxkBAAIDomoj5_EgfLBBi4brHa6zjjkraZHnAAJgnAACU4EhSZfBHs0l-ELmOwQ",
+    "red_9": "CAACAgIAAxkBAAIDo2oj5_EJKFvTu_SywobhpNLfGNfPAAJinAACU4EhSdgBQl4-iX2wOwQ",
+    "red_skip": "CAACAgIAAxkBAAIDpWoj5_F89tBrEudQ6qrxF8NDhwtZAAJonAACU4EhSfNhkAABpXbdqTsE",
+    "red_reverse": "CAACAgIAAxkBAAIDpmoj5_EqcHQnFmFkyJOlQSz5DmWwAAJsnAACU4EhSYEnckT-4AflOwQ",
+    "red_+2": "CAACAgIAAxkBAAIDp2oj5_Hp5Ol7lSvmgSh0JGUAAeblUAACbZwAAlOBIUlTwOgnqq7bpjsE",
+    # Green cards
+    "green_0": "CAACAgIAAxkBAAIDZ2oj56FvEVreCEXJNyRHuQ7CwPttAAK-nAACU4EhSVZqugVMs_MTOwQ",
     "green_1": "CAACAgIAAxkBAAIDgGoj59BFMm6zD6MXsY8E1XMw-u13AAKJnAACU4EhSWVPFGfZ0zb1OwQ",
     "green_2": "CAACAgIAAxkBAAIDgWoj59DcVf6GYGhuDYJDUsq_GGx2AAKLnAACU4EhSeI7nt2WGYTeOwQ",
     "green_3": "CAACAgIAAxkBAAIDg2oj59Bl2qBLZnNbM_AgckwSoeDuAAKPnAACU4EhSX4kFxKXb3ShOwQ",
