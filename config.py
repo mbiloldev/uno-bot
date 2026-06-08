@@ -1,6 +1,6 @@
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7044287189:AAF9uXbbz6A3Pq_cG1iHQ6FB6J9DoxkrHVc")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "your_bot_token_hero")
 BOT_USERNAME = os.getenv("BOT_USERNAME", "@mb1uz")
 
 MIN_PLAYERS = 2
